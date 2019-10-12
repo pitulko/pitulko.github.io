@@ -1,0 +1,30 @@
+#body3 { background: url(left.png) repeat-y, url(right.png) repeat-y 100%;
+	background-color: Cornsilk;
+}
+#body1 {
+	background-color: Cornsilk;
+
+}
+p{
+	text-shadow: 1px 1px 1px silver,
+               -1px 1px 1px silver;
+  color: Indigo;
+}
+ul {
+	font-size: 20pt;
+	font-weight: bold;
+	text-shadow: -1px -1px 1px silver,
+                 1px -1px 1px silver;
+}
+#body2 {
+	background-image: url(left.png);
+	background-size: 100pt;
+	background: linear-gradient(to top, #fefcea, #f1da36);
+  }
+#p2{
+       font-size: 20pt;
+	text-shadow: -1px -1px #000,
+               0 1px 0 #444;
+  color: #222;
+  transition: all 1s;
+}
