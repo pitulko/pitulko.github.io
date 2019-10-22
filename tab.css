@@ -28,3 +28,9 @@ ul {
   color: #222;
   transition: all 1s;
 }
+body {
+	background-color: lightblue;
+}
+tr:nth-child(odd) {background: red;}
+tr:nth-child(even) {background-color: green;}
+tr:hover {background-color: grey; }
