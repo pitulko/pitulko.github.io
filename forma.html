@@ -3,24 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Питулько</title>
-</head>
+
+<script>
+function hello() {
+x=document.form.name.value;
+y=document.form.date.value;
+alert("Вітаємо, "+x+". \nToday is "+ y)
+}
+</script>
 <style>
-     fieldset{
+   fieldset{
 	border:3pt solid orange; 
 	   }
     p{
 	font-size: 20pt;
    font-weight: bold;
 </style>
+</head>
 <body bgcolor="Seashell">
-<form name="forma">
+<form name="form">
 <p align="center">Заповніть порожні бланки: </p>
 <fieldset> <p>Обов'язково:</p>
-<p>Ім'я: <input name="user" required="">
+<p>Ім'я: <input name="user" required>
 </p>
 <p>Прізвище: <input name="name" required="">
 </p>
-<p>По батькові: <input type="name2" name="age" required="">
+<p>По батькові: <input type="name" name="name1" required="">
 </p>
 <p>E-mail: <input type="email" name="email" required="">
 </p>
@@ -29,13 +37,13 @@
 
 <fieldset><p>Вибірково:</p>
 	<p>
-	Дата народження: <input type="birth" id="birth" name="birth">
-	Додатковий email: <input type="email1" name="email1"></p>
-	Патріот  <input type="radio" name="p" value="p" checked="">
-	Не патріот <input type="radio" name="np" value="np">
+	Дата народження: <input type="date" id="date" name="date">
+	Додатковий email: <input type="email" name="email1"></p>
+	Жінка  <input type="radio" name="f" value="sex">
+	Чоловік <input type="radio" name="m" value="sex">
  <br>  
   </fieldset>
-   <button>Надіслати</button>
+   <input type="button" value="Надіслати" onclick="hello()">
 </form>
 </body>
 </html>
